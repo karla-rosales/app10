@@ -1,5 +1,5 @@
 //JavaScript
-$(document).ready(function(e) {
+$(document).ready(function (e){
     $('#principal').height($('#page1').height());
 	document.addEventListener("deviceready",function(){
 		
@@ -17,7 +17,7 @@ $(document).ready(function(e) {
 			$(this).addClass('tocada');
 			audio.play($(this).attr('id'));
 			
-		}).bind('touchstart',function(){
+		}).bind('touchend',function(){
 			$(this).removeClass('tocada');
 		});
 		
